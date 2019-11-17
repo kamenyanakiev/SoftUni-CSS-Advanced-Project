@@ -1,0 +1,1 @@
+Personal project for SoftUni CSS Advanced final exam.
