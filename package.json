@@ -1,0 +1,26 @@
+{
+  "name": "SoftUni-CSS-Advanced-Project",
+  "version": "1.0.0",
+  "description": "Personal project for SoftUni CSS Advanced final exam.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "node-sass -w scss/ -o docs/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamenyanakiev/SoftUni-CSS-Advanced-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamenyanakiev/SoftUni-CSS-Advanced-Project/issues"
+  },
+  "homepage": "https://github.com/kamenyanakiev/SoftUni-CSS-Advanced-Project#readme",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
