@@ -3,9 +3,10 @@ destination: docs
 email: kamenqnakiev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal project of Kamen Yanakiev for SoftUni Advanced CSS Finals.
+root: /
 baseurl: "/SoftUni-CSS-Advanced-Project"
 url: "https://github.com/kamenyanakiev/SoftUni-CSS-Advanced-Project" 
-github_username:  kamenyanakiev
+github_username: kamenyanakiev
 
 # Build settings
 plugins:
