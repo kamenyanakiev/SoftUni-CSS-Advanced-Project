@@ -1,5 +1,6 @@
-$color: blue;
+@import 'reset.css', 'typography.css', 'layout.css', 'variables';
+
 
 body {
-    background: $color;
+    background: $background-primary;
 }

@@ -1,0 +1,15 @@
+@import 'variables';
+
+html {
+    margin: 0 5rem;
+}
+
+.site-header {
+    background: red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .site-nav > a{
+        text-decoration: none;
+    }
+}
