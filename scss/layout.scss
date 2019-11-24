@@ -4,12 +4,16 @@ html {
     margin: 0 5rem;
 }
 
-.site-header {
+.main-header {
     background: red;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     .site-nav > a{
         text-decoration: none;
+        border: 1px solid $primary-btn-ky;
+        border-radius: 5px;
+        font-size: $medium-font-size;
+        background: $border-btn-ky;
     }
 }

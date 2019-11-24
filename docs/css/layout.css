@@ -1,10 +1,14 @@
 html {
   margin: 0 5rem; }
 
-.site-header {
+.main-header {
   background: red;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between; }
-  .site-header .site-nav > a {
-    text-decoration: none; }
+  .main-header .site-nav > a {
+    text-decoration: none;
+    border: 1px solid #C8761C;
+    border-radius: 5px;
+    font-size: 20px;
+    background: #F48F22; }
