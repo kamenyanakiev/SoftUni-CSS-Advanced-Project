@@ -1,0 +1,28 @@
+.race {
+    &-human {
+        font-size: $small-medium-font-size;
+        font-weight: bold;
+        color: $name-color-alliance;
+    }
+
+    &-tauren {
+        font-size: $small-medium-font-size;
+        font-weight: bold;
+        color: $name-color-horde;
+    }
+}
+
+.class {
+    &-paladin {
+        font-size: $small-medium-font-size;
+        font-weight: bold;
+        color: $class-color-paladin;
+    }
+
+    &-druid {
+        font-size: $small-medium-font-size;
+        font-weight: bold;
+        color: $class-color-druid;
+    }
+}
+

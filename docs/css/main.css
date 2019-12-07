@@ -1,5 +1,76 @@
 @import url(reset.css);
 @import url(typography.css);
 @import url(layout.css);
-body {
-  background: purple; }
+.race-human {
+  font-size: 18px;
+  font-weight: bold;
+  color: #144587; }
+
+.race-tauren {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8C1616; }
+
+.class-paladin {
+  font-size: 18px;
+  font-weight: bold;
+  color: #F58CBA; }
+
+.class-druid {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FF7D0A; }
+
+.site-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; }
+  .site-content .panel {
+    height: 20rem;
+    background: chartreuse;
+    padding: 0.5rem; }
+    .site-content .panel-small {
+      background: #262321; }
+    .site-content .panel-large {
+      grid-column: 1 / span 2; }
+  .site-content .verkow-panel, .site-content .druudo-panel {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .site-content .verkow-panel p, .site-content .druudo-panel p {
+      color: white; }
+    .site-content .verkow-panel .character-avatar, .site-content .druudo-panel .character-avatar {
+      margin-top: 0.5rem;
+      border: 2px solid black;
+      width: auto;
+      height: 40%; }
+    .site-content .verkow-panel .character-text, .site-content .druudo-panel .character-text {
+      height: fit-content;
+      text-align: center; }
+      .site-content .verkow-panel .character-text .character-name, .site-content .druudo-panel .character-text .character-name {
+        font-size: 40px; }
+    .site-content .verkow-panel .mythic-score, .site-content .druudo-panel .mythic-score {
+      text-align: center;
+      font-size: 20px; }
+      .site-content .verkow-panel .mythic-score .best-score, .site-content .druudo-panel .mythic-score .best-score {
+        border: 2px solid #111;
+        background: #33302d;
+        font-weight: bold;
+        color: #59acbd;
+        display: inline;
+        padding: 0 0.7rem;
+        border-radius: 5px; }
+      .site-content .verkow-panel .mythic-score p, .site-content .druudo-panel .mythic-score p {
+        margin: 0.5rem 0; }
+      .site-content .verkow-panel .mythic-score .season, .site-content .druudo-panel .mythic-score .season {
+        margin-bottom: 1rem; }
+      .site-content .verkow-panel .mythic-score .to-character-btn, .site-content .druudo-panel .mythic-score .to-character-btn {
+        border: 2px solid #111;
+        background: #33302d;
+        color: gainsboro;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.2rem 1rem;
+        border-radius: 5px; }
+      .site-content .verkow-panel .mythic-score .to-character-btn:hover, .site-content .druudo-panel .mythic-score .to-character-btn:hover {
+        background: #4a4343; }

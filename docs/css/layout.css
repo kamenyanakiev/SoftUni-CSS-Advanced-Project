@@ -1,14 +1,23 @@
-html {
-  margin: 0 5rem; }
-
-.main-header {
-  background: red;
+.site-header {
+  background: #262321;
+  padding: 0.5rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between; }
-  .main-header .site-nav > a {
+  .site-header .site-nav > a {
     text-decoration: none;
     border: 1px solid #C8761C;
     border-radius: 5px;
     font-size: 20px;
     background: #F48F22; }
+  .site-header .page-header-text {
+    color: white; }
+
+body {
+  background: #111; }
+
+.site-content {
+  margin: 3rem 15rem;
+  padding: 2rem;
+  background: #33302d;
+  width: 70vw; }

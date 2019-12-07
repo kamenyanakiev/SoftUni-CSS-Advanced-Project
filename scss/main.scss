@@ -1,6 +1,84 @@
-@import 'reset.css', 'typography.css', 'layout.css', 'variables';
+@import 'reset.css', 'typography.css', 'layout.css', 'variables', 'charactersAndClassColors';
 
+.site-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 
-body {
-    background: $background-primary;
+    .panel {
+        height: 20rem;
+        background: chartreuse;
+        padding: 0.5rem;
+
+        &-small {
+            background: $header-color
+        }
+
+        &-large {
+            grid-column: 1 / span 2;
+        }
+    }
+
+    .verkow-panel, .druudo-panel {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        p {
+            color: white;
+        }
+
+        .character-avatar {
+            margin-top: 0.5rem;
+            border: 2px solid black;
+            width: auto;
+            height: 40%;
+        }
+    
+        .character-text {
+            height: fit-content;
+            text-align: center;
+
+            .character-name {
+                font-size: $extra-large-font-size;
+            }
+        }
+
+        .mythic-score {
+            text-align: center;
+            font-size: $medium-font-size;
+            .best-score {
+                border: 2px solid $main-background-color;
+                background: $site-primary-color;
+                font-weight: bold;
+                color: $mythic-score-color;
+                display: inline;
+                padding: 0 0.7rem;
+                border-radius: 5px;
+            }
+
+            p {
+                margin: 0.5rem 0;
+            }
+
+            .season {
+                margin-bottom: 1rem;
+            }
+
+            .to-character-btn {
+                border: 2px solid $main-background-color;
+                background: $site-primary-color;
+                color: gainsboro;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 0.2rem 1rem;
+                border-radius: 5px;
+            }
+
+            .to-character-btn:hover {
+                background: $site-content-color;
+            }
+        }
+    }
+    
 }

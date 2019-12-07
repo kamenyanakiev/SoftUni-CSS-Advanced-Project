@@ -1,11 +1,8 @@
 @import 'variables';
 
-html {
-    margin: 0 5rem;
-}
-
-.main-header {
-    background: red;
+.site-header {
+    background: $header-color;
+    padding: 0.5rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -16,4 +13,18 @@ html {
         font-size: $medium-font-size;
         background: $border-btn-ky;
     }
+    .page-header-text {
+        color: white;
+    }
+}
+
+body {
+    background: $main-background-color;
+}
+
+.site-content {
+    margin: 3rem 15rem;
+    padding: 2rem;
+    background: $site-primary-color;
+    width: 70vw;
 }
