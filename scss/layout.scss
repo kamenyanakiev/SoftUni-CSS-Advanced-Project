@@ -35,7 +35,10 @@
 }
 
 body {
-    background: $main-background-color;
+    background-image: url('./../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #172E42;
 }
 
 .site-content {
@@ -43,6 +46,7 @@ body {
     padding: 2rem;
     background: $site-primary-color;
     max-width: 80vw;
+    border: 2px solid $main-background-color;
 }
 
 .noselect {

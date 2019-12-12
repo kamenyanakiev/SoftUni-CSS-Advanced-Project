@@ -1,9 +1,11 @@
 @import 'reset.css', 'typography.css', 'layout.css', 'variables', 'characters-class-colors';
 
+
 .site-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+
 
     .panel {
         height: fit-content;
@@ -147,6 +149,7 @@
                         border-radius: 3px;
                     }
                 }
+
                 .gear-icon {
                     height: auto;
                     align-self: center;
@@ -207,9 +210,10 @@
                 background-color: $table-color-hover;
             }
 
-            .dungeon{
+            .dungeon {
                 display: flex;
                 padding-top: 0.5rem;
+
                 .dungeon-name {
                     margin-left: 2rem;
                     display: inline;
@@ -221,7 +225,7 @@
                     width: 20px;
                     height: auto;
                 }
-            } 
+            }
 
             .dungeon-level .fa-star {
                 color: $table-dungeon-level-star;

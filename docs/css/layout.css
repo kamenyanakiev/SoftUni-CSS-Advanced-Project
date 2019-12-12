@@ -24,13 +24,17 @@
     color: white; }
 
 body {
-  background: #111; }
+  background-image: url("./../images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #172E42; }
 
 .site-content {
   margin: 3rem 15rem;
   padding: 2rem;
   background: #33302d;
-  max-width: 80vw; }
+  max-width: 80vw;
+  border: 2px solid #111; }
 
 .noselect {
   -webkit-touch-callout: none;
