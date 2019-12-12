@@ -4,13 +4,23 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between; }
-  .site-header .site-nav > a {
-    text-decoration: none;
-    border: 1px solid #C8761C;
-    border-radius: 5px;
-    font-size: 20px;
-    background: #F48F22; }
+  .site-header .site-nav {
+    margin-right: 15rem;
+    margin-top: 0.5rem; }
+    .site-header .site-nav a {
+      text-decoration: none;
+      padding: 0.2rem 0.5rem;
+      margin-left: 0.5rem;
+      font-weight: bold;
+      color: white;
+      border: 2px solid #C8761C;
+      border-radius: 5px;
+      font-size: 20px;
+      background: #F48F22; }
+    .site-header .site-nav a:hover {
+      background: #f4b222; }
   .site-header .page-header-text {
+    margin-left: 15rem;
     color: white; }
 
 body {
@@ -20,4 +30,12 @@ body {
   margin: 3rem 15rem;
   padding: 2rem;
   background: #33302d;
-  width: 70vw; }
+  max-width: 80vw; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }

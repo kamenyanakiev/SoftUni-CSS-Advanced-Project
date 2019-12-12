@@ -6,14 +6,30 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    .site-nav > a{
-        text-decoration: none;
-        border: 1px solid $primary-btn-ky;
-        border-radius: 5px;
-        font-size: $medium-font-size;
-        background: $border-btn-ky;
+
+    .site-nav {
+        margin-right: 15rem;
+        margin-top: 0.5rem;
+
+        a {
+            text-decoration: none;
+            padding: 0.2rem 0.5rem;
+            margin-left: 0.5rem;
+            font-weight: bold;
+            color: white;
+            border: 2px solid $border-btn-ky;
+            border-radius: 5px;
+            font-size: $medium-font-size;
+            background: $primary-btn-ky;
+        }
+
+        a:hover {
+            background: $primary-btn-higlight-ky;
+        }
     }
+
     .page-header-text {
+        margin-left: 15rem;
         color: white;
     }
 }
@@ -26,5 +42,14 @@ body {
     margin: 3rem 15rem;
     padding: 2rem;
     background: $site-primary-color;
-    width: 70vw;
+    max-width: 80vw;
 }
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }

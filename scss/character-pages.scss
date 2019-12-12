@@ -26,66 +26,31 @@
                 color: $main-orange-color;
                 text-shadow: -1px 0 $main-orange-shadow, 0 1px $main-orange-shadow 0 $main-orange-shadow, 0 -1px $main-orange-shadow;
             }
-
-            .select-character {
-                font-size: $large-font-size;
-                color: white;
-            }
-            
-            .select-character span {
-                animation-name: blink;
-                animation-duration: 1.5s;
-                animation-iteration-count: infinite;
-                /**
-                 * This makes sure that the starting style (opacity: .2)
-                 * of the animation is applied before the animation starts.
-                 * Otherwise we would see a short flash or would have
-                 * to set the default styling of the dots to the same
-                 * as the animation. Same applies for the ending styles.
-                 */
-                animation-fill-mode: both;
-            }
-            
-            .select-character span:nth-child(2) {
-                animation-delay: .2s;
-            }
-            
-            .select-character span:nth-child(3) {
-                animation-delay: .4s;
-            }
-
-            @keyframes blink {
-                0% {
-                  opacity: 0;
-                }
-                20% {
-                  opacity: 1;
-                }
-                100% {
-                  opacity: 0;
-                }
-            }
         }
     }
 
     .verkow-panel, .druudo-panel, .racor-panel {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        .character-avatar {
+            margin-top: 0.5rem;
+            margin-left: 1rem;
+            border: 2px solid black;
+            width: auto;
+            height: 40%;
+            flex: 0 0 auto;
+        }
 
         p {
             color: white;
         }
-
-        .character-avatar {
-            margin-top: 0.5rem;
-            border: 2px solid black;
-            width: auto;
-            height: 40%;
-        }
     
         .character-text {
+            flex: 0 0 30%;
             height: fit-content;
+            margin-left: 3rem;
             text-align: center;
 
             .character-name {
@@ -94,20 +59,32 @@
         }
 
         .mythic-score {
-            text-align: center;
+            margin-top: 0.5rem;
+            flex: 0 0 20%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
             font-size: $medium-font-size;
             .best-score {
+                flex: 0 0 100%;
                 border: 2px solid $main-background-color;
                 background: $site-primary-color;
                 font-weight: bold;
                 color: $mythic-score-color;
-                display: inline;
+                justify-self: center;
+                width: fit-content;
                 padding: 0 0.7rem;
                 border-radius: 5px;
             }
 
+            .mythic-score-container {
+                margin-bottom: 0.5rem;
+            }
+
             p {
+                flex: 0 0 100%;
                 margin: 0.5rem 0;
+                display: inline;
             }
 
             .season {
@@ -132,6 +109,16 @@
         .mythic-text {
             font-weight: bold;
             color: $mythic-score-color;
+        }
+    }
+
+    .gear-container, .talent-container, .dungeon-score-conatiner{
+        .container-header {
+            color: white;
+            text-align: center;
+            font-size: $large-font-size;
+            font-weight: bold;
+            background: $character-details-header-color;
         }
     }
     
