@@ -6,9 +6,9 @@
     gap: 2rem;
 
     .panel {
-        height: 20rem; 
-        padding: 0.5rem;
+        height: fit-content;
         background-color: $header-color;
+        border: 2px solid $character-details-header-color;
 
         &-medium {
             background: $header-color;
@@ -29,10 +29,14 @@
         }
     }
 
-    .verkow-panel, .druudo-panel, .racor-panel {
+    .verkow-panel,
+    .druudo-panel,
+    .racor-panel {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 0.3rem;
 
         .character-avatar {
             margin-top: 0.5rem;
@@ -46,7 +50,7 @@
         p {
             color: white;
         }
-    
+
         .character-text {
             flex: 0 0 30%;
             height: fit-content;
@@ -65,6 +69,7 @@
             flex-flow: row wrap;
             justify-content: center;
             font-size: $medium-font-size;
+
             .best-score {
                 flex: 0 0 100%;
                 border: 2px solid $main-background-color;
@@ -77,18 +82,10 @@
                 border-radius: 5px;
             }
 
-            .mythic-score-container {
-                margin-bottom: 0.5rem;
-            }
 
             p {
                 flex: 0 0 100%;
-                margin: 0.5rem 0;
                 display: inline;
-            }
-
-            .season {
-                margin-bottom: 1rem;
             }
 
             .to-character-btn {
@@ -112,7 +109,10 @@
         }
     }
 
-    .gear-container, .talent-container, .dungeon-score-conatiner{
+    .gear-container,
+    .talent-container,
+    .dungeon-score-conatiner {
+
         .container-header {
             color: white;
             text-align: center;
@@ -120,6 +120,109 @@
             font-weight: bold;
             background: $character-details-header-color;
         }
+
+        .container-items {
+            display: flex;
+            flex-flow: row wrap;
+            margin: 1rem 1rem 0 1rem;
+            justify-content: center;
+
+            .gear-item,
+            .talent-item {
+                flex: 0 0 20%;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+                margin-bottom: 1rem;
+
+                .gear-icon,
+                .talent-icon {
+                    height: auto;
+                    align-self: center;
+                    border: 2px solid $character-details-header-color;
+                    border-radius: 3px;
+                }
+
+
+                .gear-level {
+                    align-self: center;
+                    width: fit-content;
+                    margin-top: 0.5rem;
+                    padding: 0 0.5rem;
+                    color: white;
+                    background: $item-level-color;
+                    font-weight: bold;
+                    border-radius: 2px;
+                }
+
+                .talent-level {
+                    align-self: center;
+                    width: fit-content;
+                    margin-top: 0.5rem;
+                    padding: 0 0.5rem;
+                    color: white;
+                    background: $character-details-header-color;
+                    font-weight: bold;
+                    border-radius: 2px;
+                }
+
+                .special {
+                    background-color: $item-level-color-special;
+                }
+            }
+        }
+
+        .dungeons-table {
+            width: 100%;
+            color: white;
+
+            th {
+                background: $header-color;
+            }
+
+            tr {
+                height: 2rem;
+            }
+
+            tr:nth-child(even) {
+                background-color: $table-color-even;
+            }
+
+            tr:nth-child(odd) {
+                background-color: $table-color-odd;
+            }
+
+            tr:hover {
+                background-color: $table-color-hover;
+            }
+
+            .dungeon{
+                display: flex;
+                padding-top: 0.5rem;
+                .dungeon-name {
+                    margin-left: 2rem;
+                    display: inline;
+                }
+
+                .dungeon-icon {
+                    padding-left: 1rem;
+                    float: left;
+                    width: 20px;
+                    height: auto;
+                }
+            } 
+
+            .dungeon-level .fa-star {
+                color: $table-dungeon-level-star;
+                font-size: 6px;
+            }
+
+            .dungeon-affixes .dungeon-affixes-icon {
+                margin-top: 0.3rem;
+                width: 20px;
+                height: auto;
+            }
+        }
     }
-    
+
 }

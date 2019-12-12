@@ -31,9 +31,9 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem; }
   .site-content .panel {
-    height: 20rem;
-    padding: 0.5rem;
-    background-color: #262321; }
+    height: fit-content;
+    background-color: #262321;
+    border: 2px solid #1A1716; }
     .site-content .panel-medium {
       background: #262321;
       grid-column: 1 / span 2; }
@@ -46,34 +46,50 @@
         font-size: 40px;
         color: #F7A40E;
         text-shadow: -1px 0 #C73F1C, 0 1px #C73F1C 0 #C73F1C, 0 -1px #C73F1C; }
-  .site-content .verkow-panel, .site-content .druudo-panel, .site-content .racor-panel {
+  .site-content .verkow-panel,
+  .site-content .druudo-panel,
+  .site-content .racor-panel {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between; }
-    .site-content .verkow-panel .character-avatar, .site-content .druudo-panel .character-avatar, .site-content .racor-panel .character-avatar {
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem; }
+    .site-content .verkow-panel .character-avatar,
+    .site-content .druudo-panel .character-avatar,
+    .site-content .racor-panel .character-avatar {
       margin-top: 0.5rem;
       margin-left: 1rem;
       border: 2px solid black;
       width: auto;
       height: 40%;
       flex: 0 0 auto; }
-    .site-content .verkow-panel p, .site-content .druudo-panel p, .site-content .racor-panel p {
+    .site-content .verkow-panel p,
+    .site-content .druudo-panel p,
+    .site-content .racor-panel p {
       color: white; }
-    .site-content .verkow-panel .character-text, .site-content .druudo-panel .character-text, .site-content .racor-panel .character-text {
+    .site-content .verkow-panel .character-text,
+    .site-content .druudo-panel .character-text,
+    .site-content .racor-panel .character-text {
       flex: 0 0 30%;
       height: fit-content;
       margin-left: 3rem;
       text-align: center; }
-      .site-content .verkow-panel .character-text .character-name, .site-content .druudo-panel .character-text .character-name, .site-content .racor-panel .character-text .character-name {
+      .site-content .verkow-panel .character-text .character-name,
+      .site-content .druudo-panel .character-text .character-name,
+      .site-content .racor-panel .character-text .character-name {
         font-size: 40px; }
-    .site-content .verkow-panel .mythic-score, .site-content .druudo-panel .mythic-score, .site-content .racor-panel .mythic-score {
+    .site-content .verkow-panel .mythic-score,
+    .site-content .druudo-panel .mythic-score,
+    .site-content .racor-panel .mythic-score {
       margin-top: 0.5rem;
       flex: 0 0 20%;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
       font-size: 20px; }
-      .site-content .verkow-panel .mythic-score .best-score, .site-content .druudo-panel .mythic-score .best-score, .site-content .racor-panel .mythic-score .best-score {
+      .site-content .verkow-panel .mythic-score .best-score,
+      .site-content .druudo-panel .mythic-score .best-score,
+      .site-content .racor-panel .mythic-score .best-score {
         flex: 0 0 100%;
         border: 2px solid #111;
         background: #33302d;
@@ -83,15 +99,14 @@
         width: fit-content;
         padding: 0 0.7rem;
         border-radius: 5px; }
-      .site-content .verkow-panel .mythic-score .mythic-score-container, .site-content .druudo-panel .mythic-score .mythic-score-container, .site-content .racor-panel .mythic-score .mythic-score-container {
-        margin-bottom: 0.5rem; }
-      .site-content .verkow-panel .mythic-score p, .site-content .druudo-panel .mythic-score p, .site-content .racor-panel .mythic-score p {
+      .site-content .verkow-panel .mythic-score p,
+      .site-content .druudo-panel .mythic-score p,
+      .site-content .racor-panel .mythic-score p {
         flex: 0 0 100%;
-        margin: 0.5rem 0;
         display: inline; }
-      .site-content .verkow-panel .mythic-score .season, .site-content .druudo-panel .mythic-score .season, .site-content .racor-panel .mythic-score .season {
-        margin-bottom: 1rem; }
-      .site-content .verkow-panel .mythic-score .to-character-btn, .site-content .druudo-panel .mythic-score .to-character-btn, .site-content .racor-panel .mythic-score .to-character-btn {
+      .site-content .verkow-panel .mythic-score .to-character-btn,
+      .site-content .druudo-panel .mythic-score .to-character-btn,
+      .site-content .racor-panel .mythic-score .to-character-btn {
         border: 2px solid #111;
         background: #33302d;
         color: gainsboro;
@@ -99,14 +114,142 @@
         text-decoration: none;
         padding: 0.2rem 1rem;
         border-radius: 5px; }
-      .site-content .verkow-panel .mythic-score .to-character-btn:hover, .site-content .druudo-panel .mythic-score .to-character-btn:hover, .site-content .racor-panel .mythic-score .to-character-btn:hover {
+      .site-content .verkow-panel .mythic-score .to-character-btn:hover,
+      .site-content .druudo-panel .mythic-score .to-character-btn:hover,
+      .site-content .racor-panel .mythic-score .to-character-btn:hover {
         background: #4a4343; }
-    .site-content .verkow-panel .mythic-text, .site-content .druudo-panel .mythic-text, .site-content .racor-panel .mythic-text {
+    .site-content .verkow-panel .mythic-text,
+    .site-content .druudo-panel .mythic-text,
+    .site-content .racor-panel .mythic-text {
       font-weight: bold;
       color: #59acbd; }
-  .site-content .gear-container .container-header, .site-content .talent-container .container-header, .site-content .dungeon-score-conatiner .container-header {
+  .site-content .gear-container .container-header,
+  .site-content .talent-container .container-header,
+  .site-content .dungeon-score-conatiner .container-header {
     color: white;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     background: #1A1716; }
+  .site-content .gear-container .container-items,
+  .site-content .talent-container .container-items,
+  .site-content .dungeon-score-conatiner .container-items {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1rem 1rem 0 1rem;
+    justify-content: center; }
+    .site-content .gear-container .container-items .gear-item,
+    .site-content .gear-container .container-items .talent-item,
+    .site-content .talent-container .container-items .gear-item,
+    .site-content .talent-container .container-items .talent-item,
+    .site-content .dungeon-score-conatiner .container-items .gear-item,
+    .site-content .dungeon-score-conatiner .container-items .talent-item {
+      flex: 0 0 20%;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      margin-bottom: 1rem; }
+      .site-content .gear-container .container-items .gear-item .gear-icon,
+      .site-content .gear-container .container-items .gear-item .talent-icon,
+      .site-content .gear-container .container-items .talent-item .gear-icon,
+      .site-content .gear-container .container-items .talent-item .talent-icon,
+      .site-content .talent-container .container-items .gear-item .gear-icon,
+      .site-content .talent-container .container-items .gear-item .talent-icon,
+      .site-content .talent-container .container-items .talent-item .gear-icon,
+      .site-content .talent-container .container-items .talent-item .talent-icon,
+      .site-content .dungeon-score-conatiner .container-items .gear-item .gear-icon,
+      .site-content .dungeon-score-conatiner .container-items .gear-item .talent-icon,
+      .site-content .dungeon-score-conatiner .container-items .talent-item .gear-icon,
+      .site-content .dungeon-score-conatiner .container-items .talent-item .talent-icon {
+        height: auto;
+        align-self: center;
+        border: 2px solid #1A1716;
+        border-radius: 3px; }
+      .site-content .gear-container .container-items .gear-item .gear-level,
+      .site-content .gear-container .container-items .talent-item .gear-level,
+      .site-content .talent-container .container-items .gear-item .gear-level,
+      .site-content .talent-container .container-items .talent-item .gear-level,
+      .site-content .dungeon-score-conatiner .container-items .gear-item .gear-level,
+      .site-content .dungeon-score-conatiner .container-items .talent-item .gear-level {
+        align-self: center;
+        width: fit-content;
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+        color: white;
+        background: #771eb3;
+        font-weight: bold;
+        border-radius: 2px; }
+      .site-content .gear-container .container-items .gear-item .talent-level,
+      .site-content .gear-container .container-items .talent-item .talent-level,
+      .site-content .talent-container .container-items .gear-item .talent-level,
+      .site-content .talent-container .container-items .talent-item .talent-level,
+      .site-content .dungeon-score-conatiner .container-items .gear-item .talent-level,
+      .site-content .dungeon-score-conatiner .container-items .talent-item .talent-level {
+        align-self: center;
+        width: fit-content;
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+        color: white;
+        background: #1A1716;
+        font-weight: bold;
+        border-radius: 2px; }
+      .site-content .gear-container .container-items .gear-item .special,
+      .site-content .gear-container .container-items .talent-item .special,
+      .site-content .talent-container .container-items .gear-item .special,
+      .site-content .talent-container .container-items .talent-item .special,
+      .site-content .dungeon-score-conatiner .container-items .gear-item .special,
+      .site-content .dungeon-score-conatiner .container-items .talent-item .special {
+        background-color: #cc9f35; }
+  .site-content .gear-container .dungeons-table,
+  .site-content .talent-container .dungeons-table,
+  .site-content .dungeon-score-conatiner .dungeons-table {
+    width: 100%;
+    color: white; }
+    .site-content .gear-container .dungeons-table th,
+    .site-content .talent-container .dungeons-table th,
+    .site-content .dungeon-score-conatiner .dungeons-table th {
+      background: #262321; }
+    .site-content .gear-container .dungeons-table tr,
+    .site-content .talent-container .dungeons-table tr,
+    .site-content .dungeon-score-conatiner .dungeons-table tr {
+      height: 2rem; }
+    .site-content .gear-container .dungeons-table tr:nth-child(even),
+    .site-content .talent-container .dungeons-table tr:nth-child(even),
+    .site-content .dungeon-score-conatiner .dungeons-table tr:nth-child(even) {
+      background-color: #2F2F2F; }
+    .site-content .gear-container .dungeons-table tr:nth-child(odd),
+    .site-content .talent-container .dungeons-table tr:nth-child(odd),
+    .site-content .dungeon-score-conatiner .dungeons-table tr:nth-child(odd) {
+      background-color: #353535; }
+    .site-content .gear-container .dungeons-table tr:hover,
+    .site-content .talent-container .dungeons-table tr:hover,
+    .site-content .dungeon-score-conatiner .dungeons-table tr:hover {
+      background-color: #252525; }
+    .site-content .gear-container .dungeons-table .dungeon,
+    .site-content .talent-container .dungeons-table .dungeon,
+    .site-content .dungeon-score-conatiner .dungeons-table .dungeon {
+      display: flex;
+      padding-top: 0.5rem; }
+      .site-content .gear-container .dungeons-table .dungeon .dungeon-name,
+      .site-content .talent-container .dungeons-table .dungeon .dungeon-name,
+      .site-content .dungeon-score-conatiner .dungeons-table .dungeon .dungeon-name {
+        margin-left: 2rem;
+        display: inline; }
+      .site-content .gear-container .dungeons-table .dungeon .dungeon-icon,
+      .site-content .talent-container .dungeons-table .dungeon .dungeon-icon,
+      .site-content .dungeon-score-conatiner .dungeons-table .dungeon .dungeon-icon {
+        padding-left: 1rem;
+        float: left;
+        width: 20px;
+        height: auto; }
+    .site-content .gear-container .dungeons-table .dungeon-level .fa-star,
+    .site-content .talent-container .dungeons-table .dungeon-level .fa-star,
+    .site-content .dungeon-score-conatiner .dungeons-table .dungeon-level .fa-star {
+      color: #FFCF40;
+      font-size: 6px; }
+    .site-content .gear-container .dungeons-table .dungeon-affixes .dungeon-affixes-icon,
+    .site-content .talent-container .dungeons-table .dungeon-affixes .dungeon-affixes-icon,
+    .site-content .dungeon-score-conatiner .dungeons-table .dungeon-affixes .dungeon-affixes-icon {
+      margin-top: 0.3rem;
+      width: 20px;
+      height: auto; }

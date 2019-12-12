@@ -9,6 +9,7 @@
         height: 20rem; 
         padding: 0.5rem;
         background-color: $header-color;
+        border: 2px solid $character-details-header-color;
 
         &-medium {
             background: $header-color;
