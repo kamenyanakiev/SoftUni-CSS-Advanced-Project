@@ -135,8 +135,19 @@
                 justify-content: center;
                 margin-bottom: 1rem;
 
-                .gear-icon,
-                .talent-icon {
+                .wowhead-link {
+                    display: flex;
+                    align-self: center;
+                    width: fit-content;
+
+                    .talent-icon {
+                        height: auto;
+                        align-self: center;
+                        border: 2px solid $character-details-header-color;
+                        border-radius: 3px;
+                    }
+                }
+                .gear-icon {
                     height: auto;
                     align-self: center;
                     border: 2px solid $character-details-header-color;

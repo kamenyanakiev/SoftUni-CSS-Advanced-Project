@@ -149,18 +149,31 @@
       flex-flow: column wrap;
       justify-content: center;
       margin-bottom: 1rem; }
+      .site-content .gear-container .container-items .gear-item .wowhead-link,
+      .site-content .gear-container .container-items .talent-item .wowhead-link,
+      .site-content .talent-container .container-items .gear-item .wowhead-link,
+      .site-content .talent-container .container-items .talent-item .wowhead-link,
+      .site-content .dungeon-score-conatiner .container-items .gear-item .wowhead-link,
+      .site-content .dungeon-score-conatiner .container-items .talent-item .wowhead-link {
+        display: flex;
+        align-self: center;
+        width: fit-content; }
+        .site-content .gear-container .container-items .gear-item .wowhead-link .talent-icon,
+        .site-content .gear-container .container-items .talent-item .wowhead-link .talent-icon,
+        .site-content .talent-container .container-items .gear-item .wowhead-link .talent-icon,
+        .site-content .talent-container .container-items .talent-item .wowhead-link .talent-icon,
+        .site-content .dungeon-score-conatiner .container-items .gear-item .wowhead-link .talent-icon,
+        .site-content .dungeon-score-conatiner .container-items .talent-item .wowhead-link .talent-icon {
+          height: auto;
+          align-self: center;
+          border: 2px solid #1A1716;
+          border-radius: 3px; }
       .site-content .gear-container .container-items .gear-item .gear-icon,
-      .site-content .gear-container .container-items .gear-item .talent-icon,
       .site-content .gear-container .container-items .talent-item .gear-icon,
-      .site-content .gear-container .container-items .talent-item .talent-icon,
       .site-content .talent-container .container-items .gear-item .gear-icon,
-      .site-content .talent-container .container-items .gear-item .talent-icon,
       .site-content .talent-container .container-items .talent-item .gear-icon,
-      .site-content .talent-container .container-items .talent-item .talent-icon,
       .site-content .dungeon-score-conatiner .container-items .gear-item .gear-icon,
-      .site-content .dungeon-score-conatiner .container-items .gear-item .talent-icon,
-      .site-content .dungeon-score-conatiner .container-items .talent-item .gear-icon,
-      .site-content .dungeon-score-conatiner .container-items .talent-item .talent-icon {
+      .site-content .dungeon-score-conatiner .container-items .talent-item .gear-icon {
         height: auto;
         align-self: center;
         border: 2px solid #1A1716;
