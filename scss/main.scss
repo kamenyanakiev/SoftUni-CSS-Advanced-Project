@@ -10,10 +10,12 @@
         padding: 0.5rem;
         background-color: $header-color;
         border: 2px solid $character-details-header-color;
+        height: fit-content;
 
         &-medium {
             background: $header-color;
             grid-column: 1 / span 2;
+            height: fit-content;
         }
 
         &-large {
@@ -22,10 +24,10 @@
             text-align: center;
             height: fit-content;
 
-            h2 {
+            .main-header {
                 font-size: $extra-large-font-size;
                 color: $main-orange-color;
-                text-shadow: -1px 0 $main-orange-shadow, 0 1px $main-orange-shadow 0 $main-orange-shadow, 0 -1px $main-orange-shadow;
+                text-shadow: -1px 0 $main-orange-shadow, 0 1px $main-orange-shadow, 1px 0 $main-orange-shadow, 0 -1px $main-orange-shadow;
             }
 
             .select-character {
@@ -79,6 +81,7 @@
         }
 
         .character-avatar {
+            flex: 0 0 20%;
             margin-top: 0.5rem;
             border: 2px solid black;
             width: auto;
@@ -88,6 +91,8 @@
         .character-text {
             height: fit-content;
             text-align: center;
+            flex: 0 0 70%;
+            margin-bottom: 1rem;
 
             .character-name {
                 font-size: $extra-large-font-size;
@@ -97,6 +102,8 @@
         .mythic-score {
             text-align: center;
             font-size: $medium-font-size;
+            flex: 0 0 100%;
+            margin-bottom: 1rem;
             .best-score {
                 border: 2px solid $main-background-color;
                 background: $site-primary-color;

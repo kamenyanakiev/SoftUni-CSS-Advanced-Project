@@ -38,7 +38,7 @@ body {
     background-image: url('./../images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #172E42;
+    background-color: $background-after-image-color;
 }
 
 .site-content {

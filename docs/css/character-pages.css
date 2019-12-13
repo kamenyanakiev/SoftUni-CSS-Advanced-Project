@@ -42,10 +42,6 @@
       grid-column: 1 / span 3;
       text-align: center;
       height: fit-content; }
-      .site-content .panel-large h2 {
-        font-size: 40px;
-        color: #F7A40E;
-        text-shadow: -1px 0 #C73F1C, 0 1px #C73F1C 0 #C73F1C, 0 -1px #C73F1C; }
   .site-content .verkow-panel,
   .site-content .druudo-panel,
   .site-content .racor-panel {
@@ -260,6 +256,10 @@
     .site-content .dungeon-score-conatiner .dungeons-table .dungeon-level .fa-star {
       color: #FFCF40;
       font-size: 6px; }
+    .site-content .gear-container .dungeons-table .dungeon-affixes a,
+    .site-content .talent-container .dungeons-table .dungeon-affixes a,
+    .site-content .dungeon-score-conatiner .dungeons-table .dungeon-affixes a {
+      text-decoration: none; }
     .site-content .gear-container .dungeons-table .dungeon-affixes .dungeon-affixes-icon,
     .site-content .talent-container .dungeons-table .dungeon-affixes .dungeon-affixes-icon,
     .site-content .dungeon-score-conatiner .dungeons-table .dungeon-affixes .dungeon-affixes-icon {

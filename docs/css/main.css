@@ -34,19 +34,21 @@
     height: 20rem;
     padding: 0.5rem;
     background-color: #262321;
-    border: 2px solid #1A1716; }
+    border: 2px solid #1A1716;
+    height: fit-content; }
     .site-content .panel-medium {
       background: #262321;
-      grid-column: 1 / span 2; }
+      grid-column: 1 / span 2;
+      height: fit-content; }
     .site-content .panel-large {
       background: #262321;
       grid-column: 1 / span 3;
       text-align: center;
       height: fit-content; }
-      .site-content .panel-large h2 {
+      .site-content .panel-large .main-header {
         font-size: 40px;
         color: #F7A40E;
-        text-shadow: -1px 0 #C73F1C, 0 1px #C73F1C 0 #C73F1C, 0 -1px #C73F1C; }
+        text-shadow: -1px 0 #C73F1C, 0 1px #C73F1C, 1px 0 #C73F1C, 0 -1px #C73F1C; }
       .site-content .panel-large .select-character {
         font-size: 24px;
         color: white; }
@@ -81,18 +83,23 @@
     .site-content .verkow-panel p, .site-content .druudo-panel p, .site-content .racor-panel p {
       color: white; }
     .site-content .verkow-panel .character-avatar, .site-content .druudo-panel .character-avatar, .site-content .racor-panel .character-avatar {
+      flex: 0 0 20%;
       margin-top: 0.5rem;
       border: 2px solid black;
       width: auto;
       height: 40%; }
     .site-content .verkow-panel .character-text, .site-content .druudo-panel .character-text, .site-content .racor-panel .character-text {
       height: fit-content;
-      text-align: center; }
+      text-align: center;
+      flex: 0 0 70%;
+      margin-bottom: 1rem; }
       .site-content .verkow-panel .character-text .character-name, .site-content .druudo-panel .character-text .character-name, .site-content .racor-panel .character-text .character-name {
         font-size: 40px; }
     .site-content .verkow-panel .mythic-score, .site-content .druudo-panel .mythic-score, .site-content .racor-panel .mythic-score {
       text-align: center;
-      font-size: 20px; }
+      font-size: 20px;
+      flex: 0 0 100%;
+      margin-bottom: 1rem; }
       .site-content .verkow-panel .mythic-score .best-score, .site-content .druudo-panel .mythic-score .best-score, .site-content .racor-panel .mythic-score .best-score {
         border: 2px solid #111;
         background: #33302d;

@@ -22,12 +22,6 @@
             grid-column: 1 / span 3;
             text-align: center;
             height: fit-content;
-
-            h2 {
-                font-size: $extra-large-font-size;
-                color: $main-orange-color;
-                text-shadow: -1px 0 $main-orange-shadow, 0 1px $main-orange-shadow 0 $main-orange-shadow, 0 -1px $main-orange-shadow;
-            }
         }
     }
 
@@ -230,6 +224,12 @@
             .dungeon-level .fa-star {
                 color: $table-dungeon-level-star;
                 font-size: 6px;
+            }
+
+            .dungeon-affixes {
+                a {
+                    text-decoration: none;
+                }
             }
 
             .dungeon-affixes .dungeon-affixes-icon {
