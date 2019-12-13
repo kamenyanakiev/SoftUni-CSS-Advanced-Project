@@ -1,6 +1,7 @@
 @import 'variables';
 
 .site-header {
+    width: 100%;
     background: $header-color;
     padding: 0.5rem;
     display: flex;
@@ -57,3 +58,5 @@ body {
           -ms-user-select: none;
               user-select: none;
   }
+
+  

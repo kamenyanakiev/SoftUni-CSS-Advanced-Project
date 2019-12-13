@@ -91,11 +91,10 @@
     .site-content .verkow-panel p, .site-content .druudo-panel p, .site-content .racor-panel p {
       color: white; }
     .site-content .verkow-panel .character-avatar, .site-content .druudo-panel .character-avatar, .site-content .racor-panel .character-avatar {
-      flex: 0 0 20%;
       margin-top: 0.5rem;
       border: 2px solid black;
-      width: auto;
-      height: 40%; }
+      width: 90px;
+      height: 90px; }
     .site-content .verkow-panel .character-text, .site-content .druudo-panel .character-text, .site-content .racor-panel .character-text {
       height: fit-content;
       text-align: center;
