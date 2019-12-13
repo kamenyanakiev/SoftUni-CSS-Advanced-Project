@@ -66,9 +66,7 @@
   .site-content .dungeon-score-conatiner .dungeons-table .dungeon .dungeon-icon {
     display: none; }
   .site-content .dungeon-score-conatiner .dungeons-table .dungeon .dungeon-name {
-    margin: 0; }
-  body {
-    margin-bottom: 3rem; } }
+    margin: 0; } }
 
 @media (max-width: 768px) {
   .site-content .dungeon-score-conatiner .dungeons-table .dungeon-score {
