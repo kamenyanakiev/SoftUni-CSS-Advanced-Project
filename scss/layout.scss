@@ -3,7 +3,7 @@
 .site-header {
     width: 100%;
     background: $header-color;
-    padding: 0.5rem;
+    padding: 0.5rem 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -40,6 +40,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $background-after-image-color;
+    margin-bottom: 3rem;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 .site-content {
@@ -57,6 +63,28 @@ body {
          -moz-user-select: none;
           -ms-user-select: none;
               user-select: none;
-  }
+}
 
-  
+.site-footer {
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    background: $header-color;
+    padding: 0.7rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    a {
+        .footer-icon {
+            font-size: $large-font-size;
+            color: $main-orange-color;
+            text-shadow: -1px 0 $main-orange-shadow, 0 1px $main-orange-shadow, 1px 0 $main-orange-shadow, 0 -1px $main-orange-shadow;
+        }
+    }
+
+    a + a {
+        margin-left: 1rem;
+    }
+} 
