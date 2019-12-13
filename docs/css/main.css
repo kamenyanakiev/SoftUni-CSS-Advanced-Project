@@ -45,24 +45,32 @@
       grid-column: 1 / span 3;
       text-align: center;
       height: fit-content; }
-      .site-content .panel-large .main-header {
+      .site-content .panel-large .main-header, .site-content .panel-large .select-character {
         font-size: 40px;
         color: #F7A40E;
         text-shadow: -1px 0 #C73F1C, 0 1px #C73F1C, 1px 0 #C73F1C, 0 -1px #C73F1C; }
-      .site-content .panel-large .select-character {
+      .site-content .panel-large .characters-btn-ky {
+        border: 2px solid #111;
+        font-size: 20px;
+        background: #33302d;
+        color: gainsboro;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 1rem; }
+      .site-content .panel-large .characters-btn-ky:hover {
+        background: #4a4343; }
+      .site-content .panel-large .main-text {
+        margin: 2rem 0; }
+      .site-content .panel-large .main-text {
         font-size: 24px;
         color: white; }
       .site-content .panel-large .select-character span {
         animation-name: blink;
         animation-duration: 1.5s;
         animation-iteration-count: infinite;
-        /**
-                 * This makes sure that the starting style (opacity: .2)
-                 * of the animation is applied before the animation starts.
-                 * Otherwise we would see a short flash or would have
-                 * to set the default styling of the dots to the same
-                 * as the animation. Same applies for the ending styles.
-                 */
         animation-fill-mode: both; }
       .site-content .panel-large .select-character span:nth-child(2) {
         animation-delay: .2s; }
