@@ -47,6 +47,8 @@ html {
     font-size: 24px;
     color: #F7A40E;
     text-shadow: -1px 0 #C73F1C, 0 1px #C73F1C, 1px 0 #C73F1C, 0 -1px #C73F1C; }
+  .site-content .icons .footer-icon:hover {
+    color: #f4b222; }
 
 .noselect {
   -webkit-touch-callout: none;
