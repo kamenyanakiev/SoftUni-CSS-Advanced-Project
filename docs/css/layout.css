@@ -41,6 +41,12 @@ html {
   background: #33302d;
   max-width: 80vw;
   border: 2px solid #111; }
+  .site-content .icons a + a {
+    margin-left: 1rem; }
+  .site-content .icons .footer-icon {
+    font-size: 24px;
+    color: #F7A40E;
+    text-shadow: -1px 0 #C73F1C, 0 1px #C73F1C, 1px 0 #C73F1C, 0 -1px #C73F1C; }
 
 .noselect {
   -webkit-touch-callout: none;

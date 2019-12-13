@@ -54,6 +54,18 @@ html {
     background: $site-primary-color;
     max-width: 80vw;
     border: 2px solid $main-background-color;
+
+    .icons {
+        a + a {
+            margin-left: 1rem;
+        }
+
+        .footer-icon {
+            font-size: $large-font-size;
+            color: $main-orange-color;
+            text-shadow: -1px 0 $main-orange-shadow, 0 1px $main-orange-shadow, 1px 0 $main-orange-shadow, 0 -1px $main-orange-shadow;
+        }
+    } 
 }
 
 .noselect {
