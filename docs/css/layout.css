@@ -36,7 +36,7 @@ html {
   min-height: 100%; }
 
 .site-content {
-  margin: 3rem 15rem;
+  margin-top: 2rem;
   padding: 2rem;
   background: #33302d;
   max-width: 80vw;
